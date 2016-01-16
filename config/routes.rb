@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+Publify::Engine.routes.draw do
   # TODO: use only in archive sidebar. See how made other system
   get ':year/:month', to: 'articles#index', year: /\d{4}/, month: /\d{1,2}/, as: 'articles_by_month', format: false
   get ':year/:month/page/:page', to: 'articles#index', year: /\d{4}/, month: /\d{1,2}/, as: 'articles_by_month_page', format: false
